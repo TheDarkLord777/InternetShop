@@ -1,0 +1,27 @@
+@keyframes loader {
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 100%; 
+    }
+}
+.loader{
+    display: flex;
+    justify-content: flex-end;
+    width: 0;
+    height: 2px;
+    background:linear-gradient(90deg,red,green,blue);
+    filter: brightness(10);
+    animation:loader 3s infinite;
+    
+   
+}
+.circle{
+    transform: translateY(-50%) translateX(2px);;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    filter: brightness(10);
+    background-color: blue;
+}
